@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:velocity_x/velocity_x.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class AboutPage extends StatefulWidget {
   const AboutPage({super.key});
@@ -13,6 +14,8 @@ class _AboutPageState extends State<AboutPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
+            margin: EdgeInsets.all(20.0),
+
       width: context.screenWidth < 900
           ? context.screenWidth * 0.9
           : context.screenWidth * 0.3,
@@ -61,7 +64,72 @@ class _AboutPageState extends State<AboutPage> {
           ),
           const Divider(),
           Container(
+            child: const Card(
+              child: Row(
+                children: [
+                  FaIcon(
+                    FontAwesomeIcons.github,
+                  ),
+                  Padding(padding: EdgeInsets.all(8.0)),
+                  Column(
+                    children: [
+                      Text("Github"),
+                    ],
+                  ),
 
+                ]),
+            ),
+          ),
+          Container(
+            child: const Card(
+              child: Row(
+                children: [
+                  FaIcon(
+                    FontAwesomeIcons.xTwitter,
+                  ),
+                  Padding(padding: EdgeInsets.all(8.0)),
+                  Column(
+                    children: [
+                      Text("X"),
+                    ],
+                  ),
+
+                ]),
+            ),
+          ),
+          Container(
+            child: const Card(
+              child: Row(
+                children: [
+                  FaIcon(
+                    FontAwesomeIcons.googleScholar,
+                  ),
+                  Padding(padding: EdgeInsets.all(8.0)),
+                  Column(
+                    children: [
+                      Text("Google Scholar"),
+                    ],
+                  ),
+
+                ]),
+            ),
+          ),
+          Container(
+            child: const Card(
+              child: Row(
+                children: [
+                  FaIcon(
+                    FontAwesomeIcons.researchgate,
+                  ),
+                  Padding(padding: EdgeInsets.all(8.0)),
+                  Column(
+                    children: [
+                      Text("Research Gate"),
+                    ],
+                  ),
+
+                ]),
+            ),
           )
         ],
       ),

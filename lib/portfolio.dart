@@ -31,11 +31,13 @@ class _PortfolioPageState extends State<PortfolioPage> {
               ),
             )
           : null,
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Column(
           children: [
             Wrap(
+              alignment: WrapAlignment.center,
               children: [
+
                 AboutPage(),
                 EducationPage(),
               ],
