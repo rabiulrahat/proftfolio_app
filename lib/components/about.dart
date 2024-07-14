@@ -21,6 +21,8 @@ class _AboutPageState extends State<AboutPage> {
           : context.screenWidth * 0.3,
       decoration: BoxDecoration(
         color: Colors.white,
+        borderRadius: BorderRadius.circular
+        (20.0)
       ),
       child: Column(
         children: [
