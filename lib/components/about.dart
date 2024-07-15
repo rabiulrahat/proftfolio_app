@@ -75,8 +75,11 @@ class _AboutPageState extends State<AboutPage> {
             child: const Card(
               child: Row(
                 children: [
-                  FaIcon(
-                    FontAwesomeIcons.github,
+                  Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: FaIcon(
+                      FontAwesomeIcons.github,
+                    ),
                   ),
                   Padding(padding: EdgeInsets.all(8.0)),
                   Column(
@@ -92,8 +95,11 @@ class _AboutPageState extends State<AboutPage> {
             child: const Card(
               child: Row(
                 children: [
-                  FaIcon(
-                    FontAwesomeIcons.xTwitter,
+                  Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: FaIcon(
+                      FontAwesomeIcons.xTwitter,
+                    ),
                   ),
                   Padding(padding: EdgeInsets.all(8.0)),
                   Column(
@@ -109,8 +115,11 @@ class _AboutPageState extends State<AboutPage> {
             child: const Card(
               child: Row(
                 children: [
-                  FaIcon(
-                    FontAwesomeIcons.googleScholar,
+                  Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: FaIcon(
+                      FontAwesomeIcons.googleScholar,
+                    ),
                   ),
                   Padding(padding: EdgeInsets.all(8.0)),
                   Column(
@@ -126,8 +135,11 @@ class _AboutPageState extends State<AboutPage> {
             child: const Card(
               child: Row(
                 children: [
-                  FaIcon(
-                    FontAwesomeIcons.researchgate,
+                  Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: FaIcon(
+                      FontAwesomeIcons.researchgate,
+                    ),
                   ),
                   Padding(padding: EdgeInsets.all(8.0)),
                   Column(

@@ -12,8 +12,14 @@ class PortfolioPage extends StatefulWidget {
 
 class _PortfolioPageState extends State<PortfolioPage> {
   List<Widget> navItems = [
-    ElevatedButton(onPressed: () {}, child: const Text("Education")),
-    ElevatedButton(onPressed: () {}, child: const Text("Skills")),
+    Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: ElevatedButton(onPressed: () {}, child: const Text("Education")),
+    ),
+    Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: ElevatedButton(onPressed: () {}, child: const Text("Skills")),
+    ),
   ];
   bool isMobile = false;
   @override
