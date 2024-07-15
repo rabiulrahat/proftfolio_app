@@ -22,13 +22,19 @@ class _AboutPageState extends State<AboutPage> {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular
-        (20.0)
+        (30.0)
       ),
       child: Column(
         children: [
-          Image.asset('assets/partho.jpg'),
-          Text(
-            'Partho Gosh',
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+
+            child: ClipRRect(
+              borderRadius :BorderRadius.circular(30),
+              child: Image.asset('assets/partho.jpg',fit:BoxFit.fill)),
+          ),
+          const Text(
+            'Partho Ghose',
             style: TextStyle(
               fontSize: 30.0,
               fontWeight: FontWeight.bold,

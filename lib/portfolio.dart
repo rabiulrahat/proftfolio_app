@@ -12,16 +12,17 @@ class PortfolioPage extends StatefulWidget {
 
 class _PortfolioPageState extends State<PortfolioPage> {
   List<Widget> navItems = [
-    ElevatedButton(onPressed: () {}, child: Text("Education")),
-    ElevatedButton(onPressed: () {}, child: Text("Skills")),
+    ElevatedButton(onPressed: () {}, child: const Text("Education")),
+    ElevatedButton(onPressed: () {}, child: const Text("Skills")),
   ];
   bool isMobile = false;
   @override
   Widget build(BuildContext context) {
     isMobile = MediaQuery.of(context).size.width > 700 ? false : true;
     return Scaffold(
+      backgroundColor: Color.fromARGB(179, 255, 255, 255),
       appBar: AppBar(
-        title: Text("Partho's Blog"),
+        title: const Text("Partho's Blog"),
         actions: isMobile ? null : navItems,
       ),
       drawer: isMobile
@@ -37,7 +38,6 @@ class _PortfolioPageState extends State<PortfolioPage> {
             Wrap(
               alignment: WrapAlignment.center,
               children: [
-
                 AboutPage(),
                 EducationPage(),
               ],

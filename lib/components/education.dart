@@ -60,7 +60,7 @@ class _EducationPageState extends State<EducationPage> {
                 contentsBuilder: (context, index) {
                   return Card(
                     child: Padding(
-                      padding: EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(8.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
